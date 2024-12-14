@@ -1,0 +1,8 @@
+.sticker{
+    width: 45px;
+    
+}
+.sticker:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+}
