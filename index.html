@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>One Piece Themed Invitation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="./imgs/tony-chopper-one-piece.gif">
-    <img src="./imgs/brook.png" alt="" class="sticker ">
-    <img src="./imgs/chopper.png" alt="" class="sticker ">
-    <img src="./imgs/franky.png" alt="" class="sticker ">
-    <img src="./imgs/jinbe.png" alt="" class="sticker ">
-    <img src="./imgs/luffy.png" alt="" class="sticker ">
-    <img src="./imgs/nami.png" alt="" class="sticker ">
-    <img src="./imgs/robin.png" alt="" class="sticker ">
-    <img src="./imgs/sanji.png" alt="" class="sticker ">
-    <img src="./imgs/yussop.png" alt="" class="sticker ">
-    <img src="./imgs/th_sunny.png" alt="" class="sticker ">
+    <div class="card">
+        <header>
+            <img src="./imgs/tony-chopper-one-piece.gif" alt="Chopper" class="hero-img">
+            <h1>Straw Hat Pirate's Gathering</h1>
+        </header>
+        
+        <div class="details">
+            <p><strong>Location:</strong> Thousand Sunny Deck</p>
+            <p><strong>Date:</strong> December 25, 2024</p>
+            <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+        </div>
+        
+        <div class="rsvp-container">
+            <a href="https://bisonbytes.org" class="rsvp-button" target="_blank">RSVP Now!</a>
+        </div>
+        
+        <div class="sticker-container">
+            <img src="./imgs/brook.png" alt="Brook" class="sticker">
+            <img src="./imgs/chopper.png" alt="Chopper" class="sticker">
+            <img src="./imgs/franky.png" alt="Franky" class="sticker">
+            <img src="./imgs/jinbe.png" alt="Jinbe" class="sticker">
+            <img src="./imgs/luffy.png" alt="Luffy" class="sticker">
+            <img src="./imgs/nami.png" alt="Nami" class="sticker">
+            <img src="./imgs/robin.png" alt="Robin" class="sticker">
+            <img src="./imgs/sanji.png" alt="Sanji" class="sticker">
+            <img src="./imgs/yussop.png" alt="Usopp" class="sticker">
+        </div>
+
+        <div class="sunny-container">
+            <img src="./imgs/th_sunny.png" alt="Thousand Sunny" class="th_sunny" id="th_sunny">
+            <p id="graffiti" class="graffiti hidden">"One Piece 4 Ever!"</p>
+        </div>
+    </div>
+
+    <script>
+        const sunny = document.getElementById('th_sunny');
+        const graffiti = document.getElementById('graffiti');
+        sunny.addEventListener('click', () => {
+            graffiti.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

@@ -1,8 +1,111 @@
-.sticker{
-    width: 45px;
-    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.sticker:hover{
+
+/* Card styling */
+.card {
+    background: url('./imgs/onepiece_bg.jpg') center/cover no-repeat; /* Make sure you have a suitable background image */
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Hero Image & Heading */
+.hero-img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h1 {
+    margin: 15px 0;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Details */
+.details p {
+    background: rgba(255,255,255,0.8);
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* RSVP Button */
+.rsvp-container {
+    margin: 15px 0;
+}
+
+.rsvp-button {
+    background: #f5ca42;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.rsvp-button:hover {
+    background: #fff;
+    color: #f5ca42;
+    border: 2px solid #f5ca42;
+}
+
+/* Stickers */
+.sticker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.sticker {
+    width: 40px;
+    margin: 5px;
+}
+.sticker:hover {
+    transform: scale(1.2);
+}
+
+/* Sunny & Graffiti */
+.sunny-container {
+    position: relative;
+    margin-top: 15px;
+}
+
+.th_sunny {
+    width: 60px;
     cursor: pointer;
-    transform: scale(0.8);
+}
+
+.graffiti {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px #f5ca42;
+    border: 1px solid #000;
+}
+
+.hidden {
+    display: none;
 }
